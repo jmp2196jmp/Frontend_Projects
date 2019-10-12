@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Login</title>
+  </head>
+  <body>
+    <!--login form-->
+    <form class="login" action="index.html" method="post">
+      <!--to implement lengend for details-->
+      <fieldset>
+        <legend>Your Details</legend>
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" />
+        <br>
+        <label for="email">Email</label>
+        <input type="email" name="email" />
+      </fieldset>
+       <br>
+
+      <fieldset>
+        <legend>Your Review</legend>
+        <p>How did you hear about us?
+        <select class="box" name="hear" >
+        <option value="Google" selected="selected">Google</option>
+        <option value="Yahoo">Yahoo</option>
+        <option value="LinkedIn">LinkedIn</option>
+        </select>
+        </p>
+
+        <p>Would you visit again?</p>
+        <input type="radio" name="visit" value="Yes" checked="checked"/>Yes
+        <input type="radio" name="visit" value="No"/>NO
+        <input type="radio" name="visit" value="Maybe"/>Maybe
+
+         <p>Comments:</p>
+         <textarea name="Comments" rows="8" cols="80"></textarea>
+         <br>
+
+         <input type="checkbox"  checked="checked" name="sign"/>Sign me up for email updates
+          <br>
+         <input type="submit" name="sub" value="Submit Review"/>
+
+      </fieldset>
+    </form>
+  </body>
+</html>
