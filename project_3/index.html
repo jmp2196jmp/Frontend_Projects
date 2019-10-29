@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+      @import url('https://fonts.googleapis.com/css?family=Open+Sans%7CQuicksand&display=swap');
+    body{
+      font-family:"Roboto", sans-serif;
+    }
+      .header{
+        /* position:fixed; */
+        width:1350px;
+        height:100px;
+      }
+      .container{
+        width:1350px;
+        height:1000px;
+      }
+      .image img{
+        margin-left:30px;
+      }
+      .search{
+        margin-left:197px;
+         margin-top:-25px;
+      }
+      #in{
+        margin-top:-15px;
+        width: 215px;
+       height: 36px;
+      }
+      .navig{
+        margin-left:600px;
+         margin-top:-25px;
+      }
+      .navig button{
+  list-style: none;
+  font: inherit;
+  overflow: visible;
+  display: inline-block;
+  background-color: #4f8df9;
+  border-radius: 36px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #fff;
+  cursor: pointer;
+  height:32px;
+    }
+      .navig a{
+        text-decoration:none;
+         color:black;
+      }
+
+      .first{
+        width:1350px;
+        height:700px;
+        background-image:url('bg.jpg');
+        text-align:center;
+      }
+  .center{
+    /* positions:absolute; */
+    padding-top:180px;
+
+  }
+  .center button{
+    font-size: 17PX;
+     width: 275px;
+     height: 49px;
+     border_radius: 98px;
+     border-radius: 29px;
+     font-weight: bold;
+     background-color: #ff8100;
+     border:none;
+  }
+
+
+      .content {
+       width:1350px;
+       height:900px;
+       background-color:skyblue;
+       padding-top:1px;
+      }
+      .content img{
+        width:280px;
+      }
+      .content h3{
+        text-align:center;
+      }
+      .content button{
+    margin-left:60px;
+    font: 400 14px "Roboto", sans-serif;
+    padding: 12px 24px;
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.6;
+    border-radius: 40px;
+    border: 1px solid #4f8df9;
+    color: #4f8df9;
+    background: transparent;
+      }
+      .anounce{
+        position:absolute;
+        top:1000px;
+        left:70px;
+        width:280px;
+        height:450px;
+       background-color:white;
+       box-shadow:0 0 30px 0 #eaebed;
+      }
+      .logo{
+        width:280px;
+        height:130px;
+      }
+
+  .para{
+    width:280px;
+    height:400px;
+  }
+
+
+  .research{
+    position:absolute;
+    top:1000px;
+    left:378px;
+    width:280px;
+    height:450px;
+    background-color:white;
+     box-shadow:0 0 30px 0 #eaebed;
+  }
+  .globe{
+    width:280px;
+    height:130px;
+  }
+.para2{
+width:280px;
+height:400px;
+}
+
+
+
+.sales{
+  position:absolute;
+  top:1000px;
+  left:686px;
+  width:280px;
+  height:450px;
+  background-color:white;
+   box-shadow:0 0 30px 0 #eaebed;
+}
+.tree{
+  width:280px;
+  height:130px;
+}
+.para3{
+width:280px;
+height:400px;
+}
+
+
+
+.investors{
+  position:absolute;
+  top:1000px;
+  left:993px;
+  width:280px;
+  height:450px;
+  background-color:white;
+   box-shadow:0 0 30px 0 #eaebed;
+}
+.currency{
+  width:280px;
+  height:130px;
+}
+.para4{
+width:280px;
+height:400px;
+}
+
+<!-- 3rd page -->
+
+.mdd{
+  font-family:Helvetica, Arial, sans-serif;
+     font-size: 19px;
+}
+   .md{
+      font-family:Helvetica, Arial, sans-serif;
+     margin-left: -16px;
+     height: 28px;
+ }
+
+
+ <!-- 4th -->
+   .ads img{
+  width: 90px;
+  height: 50px;
+  }
+<!--6-->
+.div1{
+    /*padding-left: 300px;*/
+    margin-left: 0px;
+    marg
+background-color: red;
+width:50%;
+text-align: center;
+/*margin-left: 20%;*/
+position: absolute;
+    position: absolute;
+    top: 139px;
+    margin-left: 306px;
+    background-color:white;
+}
+h4{
+    color:white;
+}
+h5{
+    color:white;
+}
+.foot{
+    background-image: url(../images/bg.jpg);
+    /*position: absolute;*/
+    /*margin-bottom: 0px;*/
+
+}
+#button{
+    border-radius: 13px;
+}
+.fot{
+        position: absolute;
+    top: 3519px;
+    left: 0px;
+    background-color: #1b2653;
+    width: 1352px;
+    height: 429px;
+}
+
+
+
+    </style>
+  </head>
+  <body>
+
+      <div class="header">
+
+        <div class="image">
+          <img src="Capture.jpg" alt="">
+        </div>
+        <div class="search">
+          <input type="text" id="in" placeholder="Analyse any Website or App" name="search2">
+        </div>
+        <div class="navig">
+        <a href="#">Solutions</a>&nbsp;
+        <a href="#">Resources</a>&nbsp;
+        <a href="#">Pricing</a>&nbsp;
+        <a href="#">About us</a>&nbsp;
+        <a href="#">login</a>&nbsp;
+
+        <select class="box" name="lang">&nbsp;
+          <option value="">EN</option>
+          <option value="">ESP</option>
+          <option value="">FRH</option>
+        </select>
+
+        <button type="button" name="button">GET STARTED</button>
+      </div>
+<div class="container">
+      <div class="first">
+        <div class="center">
+          <h1>Market intelligence solution to</h1>
+          <h1>Make the right strategic decision</h1>
+          <button type="button" name="button">GET STARTED</button>
+        </div>
+      </div>
+
+      <div class="content">
+        <h2 style="text-align:center;">Who is SimilarWeb for?</h2>
+        <h3>Our innovative market intelligence solutions empower businesses to make better decisions:</h3>
+        <div class="anounce">
+          <div class="logo">
+            <img src="logo.png" alt="">
+          </div>
+          <!-- <div class="mark"> -->
+            <h3>Marketing</h3>
+            <p  style="text-align:center;">Reveal best strategies from the market and your competitors</p>
+            <hr>
+          <!-- </div> -->
+          <div class="para">
+            <ul>
+         <li> Uncover best SEO and content strategies</li>
+          <li>Buit & grow your affiliate and media patnerships</li>
+          <li>Enhance your display and paid search strategies</li>
+          </ul>
+          <button type="button" name="button">LEARN MORE</button>
+          </div>
+          <!-- <button type="button" name="button">LEARN MORE</button> -->
+        </div>
+
+
+        <div class="research">
+          <div class="globe">
+            <img src="globe.png" alt="">
+          </div>
+          <!-- <div class="mark"> -->
+            <h3>Research</h3>
+            <p style="text-align:center;">Understand your market, your competitors and your customers</p>
+            <hr>
+          <!-- </div> -->
+          <div class="para2">
+            <ul>
+            <li>Bechmarch your market and find ways to grow your share</li>
+              <li>Analyze trends competitors' strategy and audience behavior</li>
+            <li>Understand the shopper's journey for smarter decisions</li>
+            </ul>
+          <button type="button" name="button">LEARN MORE</button>
+          </div>
+
+        </div>
+
+
+        <div class="sales">
+          <div class="tree">
+            <img src="tree_pot.png" alt="">
+          </div>
+          <!-- <div class="mark"> -->
+            <h3>Sales</h3>
+            <p style="text-align:center;">Enhance performance throughout your sales funnel</p>
+            <hr>
+          <!-- </div> -->
+          <div class="para3">
+            <ul>
+          <li>Find, enrich and qualify leads to increase sales opportunities
+              </li>
+        <li> Generate the insights you need to perfect your pitch
+              </li>
+          <li>Monitor website traffic statistics to boost retention
+              </li>
+          </ul>
+          <button type="button" name="button">LEARN MORE</button>
+          </div>
+
+        </div>
+
+
+        <div class="investors">
+          <div class="currency">
+            <img src="currency.png" alt="">
+          </div>
+          <!-- <div class="mark"> -->
+            <h3>Research</h3>
+            <p style="text-align:center;">Evaluate companies and empower better investment decisions</p>
+            <hr>
+          <!-- </div> -->
+          <div class="para4">
+            <ul>
+          <li>
+                Source, track and evaluate investment opportunities
+              </li>
+          <li>
+                Source, track and evaluate investment opportunities
+              </li>
+          <li>
+                Surface digital signals to inform buy, sell and hold positions
+              </li>
+          </ul>
+          <button type="button" name="button">LEARN MORE</button>
+          </div>
+       </div>
+     </div>
+   </div>
+
+
+   <div style="    width: 1200px;
+   height: 606px;
+   position: absolute;
+   left: 98px;
+   top: 1680px;
+   ">
+   <div style="width: 480px;
+   height: 610px;
+   position: absolute;
+   left: 1px;
+   top: 1px;
+   ">
+   <h2 style="font-size: 2rem;font-weight:700;font-family:Helvetica, Arial, sans-serif;">Meet the SimilarWeb Platform</h2>
+   <ul class="md">
+     <li><h4 style="font-size: 19px; font-family:Helvetica, Arial, sans-serif;" >Benchmark against your competitors and industry</h4></li>
+     <li class="mdd">Reveal your competition's analytics & online strategy</li>
+     <br>
+     <li class="mdd">Discover new opportunities - partners, leads or affiliates</li><br>
+     <li class="mdd">Identify emerging trends and new players</li><br>
+     <li class="mdd">Understand consumer intent and journey</li><br>
+     <input style="    color: white;
+     background-color: #ff8100;
+     width: 181px;
+     heightauto: heigh;
+     position: absolute;
+     left: auto;
+     font-family:Helvetica, Arial, sans-serif;
+     top: 363px;
+     border-radius: 33px;
+     height: 59px;
+     border: none;"type="submit" value="SIGN UP FOR FREE"/>
+     <img style="position: absolute;
+     left: 528px;
+     top: 33px;
+     width: 617px;
+     height: 409px;
+     border-radius: 15px;box-shadow: 0 0 30px 0 #eaebed;
+     will-change: opacity, transform;box-shadow: 0 20px 80px 0 rgba(42,62,82,0.4);"src="home-pro-slide.png"/>
+   </div>
+ </div>
+ <!-- 4th -->
+
+
+ <div class="whole"style="    position: absolute;
+ top: 2358px;
+ padding-left: 197px;">
+ <h2 style="    margin-left: 351px;">Trusted and Loved by</h2>
+ <div class="ads">
+   <div class="ebay">
+     <img style="    margin-left:62px;
+     position: absolute; width: 121px;
+     top: 60px;"src="ebay-logo.png">
+   </div>
+   <div class="micro">
+     <img style="    position: absolute;
+     top: 63px;
+     margin-left: 214px; width: 141px;
+     " src="Microsoft_logo_2012.png">
+   </div>
+   <div class="omni">
+     <img style="    position: absolute;
+     top: 65px;  width: 121px;
+     margin-left: 371px;" src="Omnicom.png">
+   </div>
+   <div class="ali">
+     <img style=" position: absolute;
+     top: 65px; width: 121px;
+     margin-left: 496px;" src="alibaba.png">
+   </div>
+   <div class=" google">
+     <img style="     position: absolute;
+     top: 63px;  width: 121px;
+     margin-left:623px;"src="Google.png">
+   </div>
+   <div class="">
+     <img style="position: absolute;
+     margin-left: 767px; width: 121px;
+     " src="Deloitte.png">
+   </div>
+   <div class="png">
+     <img style="position: absolute;
+     top: 141px; width: 121px;
+     margin-left: 409px;" src="PNG.png">
+   </div>
+ </div>
+ <a href="#" style="top: 209px;text-decoration: none;
+ position: absolute;
+ margin-left: 338px;color:blue">SEE MORE OF OUR CLIENTS &rarr;</a>
+</div>
+<!--5th -->
+<div style="       width: 100%;
+height: 485px;
+background-color: #f5f9fd;
+margin-top: 65px;">
+<div style="    width: 1229px;
+margin-top:1647px;
+margin-left: 73px;
+height: 601px;"class="five">
+<img style="position:absolute;left:auto;top:auto;width:auto;height:auto;"src="home-extension-extension.png"/>
+<h1 style="    position: absolute;
+left:770px;
+top: auto;
+font-size: 53px;
+font-weight: bold; font-family:Helvetica, Arial, sans-serif;">Website traffic<br> data is always one<br> click away.</h1>
+<p style="position:absolute;left:769px;top:2947px;width:auto;height:auto;font: 400 0.875rem Roboto, sans-serif;
+color: rgba(42,62,82,0.8);font-size:20px; font-family:Helvetica, Arial, sans-serif;">Gain insight into any website's statistics & strategy with the click<br> of a button, all in one tab, as you're browsing with the SimilarWeb<br> browser add-on.
+<button style="    color: #4f8df9;
+font-size: 17PX;
+width: 275px;
+position: absolute;
+left: 0px;
+top: 103px;
+height: 49px;
+border_radius: 98px;
+border-radius: 29px;
+font-weight: bold;
+background-color: #f5f9fd;
+border: 1px solid; font-family:Helvetica, Arial, sans-serif;"><i class="fa fa-chrome "> GET OUR FREE EXTENSION</i></button>
+</div>
+</div>
+
+<div class="footer">
+  <div style="width: 100%;
+  height: auto;
+  position: absolute;
+  left: 0px;
+  background-color: #f5f9fd;
+  height: 333px;" >
+  <div class="div1" style="   width: 998px;
+  position: absolute;
+  top: 64px;
+  left: -141px;
+  height: 143px;
+  margin-left: 298px;
+  border-radius: 8px;
+">
+      <h3 style="text-align:center;">Take your Market Intelligence to the Next Level</h3>
+      <p style="text-align:center;">Learn more about how similarweb can help grow your business</p><br>
+      <input type="submit" name="get"value="GET STARTED FOR FREE" style="    background-color: #ff8100;
+  height: 38px;
+  /* margin-top: -7px; */
+  position: absolute;
+  border-radius: 36px;
+  border: none;
+  color: white;
+  font-size: 14px;
+  top: 86px;
+  font-weight: bold;
+  left: 380px;" id="button">
+  </div>
+</div>
+  <div class="fot">
+      <img style="    position: absolute;
+  left: 114px;
+  top: 51px;" src="cc.jpg">
+  <button style="    color: #9298b1;
+ font-size: 17PX;
+ width: 275px;
+ position: absolute;
+ left: 133px;
+ top: 266px;
+ height: 49px;
+ border_radius: 98px;
+ border-radius: 29px;
+ font-weight: bold;
+ background-color: #1b2653;
+ border: 1px solid;font-size: 0.875rem;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;"><i class="fa fa-chrome ">  SIMILARWEB CHROME EXTENSION</i></button>
+  <div style="font-size: 14px;
+  color: #9298b1;
+  width: auto;
+  height: 359px;
+  position: absolute;
+  left: 509px;
+  top: 40px;">
+      <h4>SOLUTION</h4>
+      <h5>BY TEAMS</h5>
+      <p>Marketing</p>
+      <p>Research</p>
+      <p>Sales</p>
+      <p>Investors</p>
+      <p>__</p>
+      <p>SimilarWeb</p>
+      <p>API & Integrations</p>
+      <p>Pricing</p>
+  </div>
+  <div style="font-size: 14px;
+  color: #9298b1;
+  width: auto;
+  height: 359px;
+  position: absolute;
+  left: 686px;
+  top: 77px;">
+
+      <h5>BY INDUSTRY</h5>
+      <p>Retail</p>
+      <p>Travel</p>
+      <p>Agencies</p>
+      <p>Consumer Goods</p>
+      <p>Publishing</p>
+      <p>Ad Tech</p>
+      <p>Consumer Finance</p>
+
+  </div>
+   <div style="font-size: 14px;
+  color: #9298b1;
+  width: auto;
+  height: 359px;
+  position: absolute;
+  left: 849px;
+  top: 43px;">
+      <h4>RESOURCES</h4>
+
+      <p>Resources Library
+</p>
+      <p>Webinars</p>
+      <p>Events</p>
+      <p>Knowledge Center</p>
+      <p>Blog</p>
+      <p>Momentum Awards</p>
+      <p>__</p>
+      <p>Top Websites</p>
+<p>Top Mobile App</p>
+  </div>
+   <div style="font-size: 14px;
+  color: #9298b1;
+  width: auto;
+  height: 359px;
+  position: absolute;
+  left: 1022px;
+  top: 43px;">
+      <h4>ABOUT US</h4>
+
+      <p>Company
+</p>
+      <p>Partners</p>
+      <p>Management</p>
+      <p>Careers</p>
+      <p>Press</p>
+      <p>Contact Us
+</p>
+      <p>
+Our Data</p>
+      <p>Customers</p>
+<p>Engineering</p>
+<hr style="color: #8c96bd;
+  width: 669px;
+  position: absolute;
+  left: -519px;
+  top: 33px;border-top: 1px solid #8c96bd;">
+<hr style="color: #8c96bd;
+  width: 1029px;
+  position: absolute;
+  left: -885px;
+  top: 327px;border-top: 1px solid #8c96bd;">
+<hr style="color: #8c96bd;
+  width: 1029px;
+  position: absolute;
+  left: -885px;
+  top: 370px;border-top: 1px solid #8c96bd;
+">
+<h4 style="position: absolute;
+  left: -887px;
+  top: 318px;color: #8c96bd;">SEE ALL SIMILARWEB OFFICES<i style="position:absolute:top:1px;" class="material-icons">expand_more</i></h4>
+  </div>
+  </div>
+</div>
+</div>
+  </body>
+</html>
