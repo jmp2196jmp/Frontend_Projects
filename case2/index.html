@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+    </script>
+    <title>TEXT</title>
+    <style>
+      .box{
+        position:absolute;
+        left:400px;
+        top:150px;
+      }
+      #bt{
+        border:none;
+        outline: none;
+        width:600px;
+        height:50px;
+        font-size:30px;
+      }
+      ul{
+        list-style-type: none;
+      }
+      li{
+        font-size:30px;
+      }
+      li:hover{
+        text-decoration:line-through;
+      }
+      ::placeholder{
+        color:black;
+        font-size:30px;
+      }
+    </style>
+
+  </head>
+  <body>
+     <div class="box">
+       <input type="text" id="bt" name="textbox" value="" placeholder="What needs to be done?">
+       <ul id="lt">
+         <li></li>
+       </ul>
+     </div>
+
+
+     <script>
+       $(document).ready(function(){
+         $("#bt").keyup(function(e) {//enter key pressed
+            var a= $('#bt').val();
+             var code = e.which;
+              if (code == 13) {//checking eneter is pressed
+              $('#lt').append('<li>' + a + '</li>');//to print value from the textbox
+               $('#bt').val("");
+               $('#bt').focus();
+                  }
+               });
+           });
+           // $("#lt").on("mouseover", "li", function(){
+           // $(this).wrap("<strike>");//to give strikethrough
+           // });
+
+           $("#lt").on("click", "li", function(){
+           $(this).remove();//remove strikethrough element
+           });
+
+
+
+     </script>
+  </body>
+</html>

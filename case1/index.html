@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hex color</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+    </script>
+  <style>
+    .square{
+      position:absolute;
+      left:200px;
+      top:180px;
+      width:300px;
+      height:300px;
+      background-color:red;
+    }
+  </style>
+
+  </head>
+  <body
+    <h1 id="hed">Hex Color Generator</h1>
+    <div class="square" id="box">
+
+    </div>
+    <script >
+      $(document).ready(function () {
+      setInterval(function () {
+      var hex=["1","2","3","4","5","6","7","8","9","A","B","C","D","E","F"];
+      var colors="#";
+      for (var i = 0; i < 6; i++) {
+       colors+=hex[(Math.floor(Math.random() * 16))];
+      }
+      $(".square").css("background-color",colors);
+      },1000);
+      });
+    </script>
+
+  </body>
+</html>
