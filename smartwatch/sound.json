@@ -1,0 +1,17 @@
+"songs": [
+    {
+      "location": "Azhalinte",
+      "date": "Shan",
+      "map": "mlist/Azhalinte.mp3"
+    },
+    {
+      "location": "Centuries",
+      "date": "Fall out boys",
+      "map": "mlist/Centuries.mp3"
+    },
+    {
+      "location": "Orasaadha",
+      "date": "rap",
+      "map": "mlist/Orasaadha.mp3"
+    }
+  ]

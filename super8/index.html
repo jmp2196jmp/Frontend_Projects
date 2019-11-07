@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+    <div class="login">
+    <form class="reg" action="index.html" method="post">
+      <label>Name:</label><br>
+      <input id="name" type="text" name="name" value="" placeholder="Enter your name"><br>
+      <p id="nm"></p>
+      <label>Email:</label><br>
+      <input id="email" type="email" name="email" value="" placeholder="you@example.com" onblur="mailcheck()"><br>
+      <p id="em"></p>
+      <label>Password:</label><br>
+      <input  id="pass" type="password" name="password" value=""  onblur="passcheck()"><br>
+      <p id="ps"></p>
+      <label>Confirm password:</label><br>
+      <input  id="cp" type="password" name="confirm" value=""  onblur="conpass()"><br>
+      <p id="cps"></p>
+
+    </form>
+    </div>
+
+    <div class="image">
+      <label>Birthday</label><br>
+      <input  id="dob" type="date" name="dob" value="" onblur="verify()" ><br>
+      <p id="bo"></p><br>
+      <label>Short Bio (Max<span id="count">140</span>)</label><br>
+      <textarea id="bio" name="bio" rows="8" cols="80" onkeyup="letcount()" ></textarea><br>
+      <p id="tx"></p>
+      <button id="bt" type="button" name="button" onclick="fill()" >Join</button>
+    </div>
+
+
+ <div class="des">
+   <h1>Super 8 Fan Club</h1>
+   <img src="super.jpg" alt="">
+   <p>Super 8 is a 2011 American science fiction monster thriller film written,
+      co-produced, and directed by J. J. Abrams and produced by Steven Spielberg.
+      The film stars Joel Courtney, Elle Fanning,
+      and Kyle Chandler and tells the story of a group of young teenagers
+      who are filming their own Super 8 movie
+      when a train derails, releasing a dangerous presence into their town.
+      </p>
+       <ul>
+         <li>Joel Courtney as Joe Lamb </li>
+         <li>  Elle Fanning as Alice Dainard </li>
+         <li>Riley Griffiths as Charles Kaznyk </li>
+         <!-- <li>Ryan Lee as Cary McCarthy </li>
+         <li>Gabriel Basso as Martin Read </li>
+         <li>Zach Mills as Preston Scott </li> -->
+       </ul>
+  </div>
+</div>
+    <script src="super.js"></script>
+  </body>
+</html>

@@ -1,0 +1,52 @@
+  @import url('https://fonts.googleapis.com/css?family=Open+Sans%7CQuicksand&display=swap');
+body{
+  font-family: 'Open Sans', arial, sans-serif;
+}
+textarea{
+width: 220px;
+height: 70px;
+}
+.login{
+  width: 250px;
+  height: 600px;
+  background-color: #d71a00;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+.container{
+  width: 1000px;
+  height: :600px;
+  background-color:grey;
+  padding: 10px;
+}
+.reg{
+  width:250px;
+  height: 600px;
+}
+.des{
+  position: absolute;
+  top:20px;
+  left:650px;
+  width: 350px;
+  height: 600px;
+  background-color: #d71a00;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+.image{
+  position: absolute;
+  top:20px;
+  left:300px;
+  width: 300px;
+  height: 600px;
+  padding-left: 10px;
+  padding-top: 10px;
+  background-color: #d71a00;
+}
+.des img{
+  width:300px;
+  height:200px;
+}
+/* .reg p{
+  font-size: 13px;
+} */

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <title>watch</title>
+  </head>
+  <body> <!--to give time on screen-->
+        <div id="image">
+          <img  src="siverwatch1.jpg" alt="smart watch" id="watch"><!--watch image-->
+           <div class="time">
+            <p id="te"></p>
+          </div>
+        </div>
+        <!-- content of music page -->
+          <div id="content">
+        <div id="container">
+          <h3>Music</h3>
+           <audio id="sound">
+             <source src="Azhalinte.mp3" type="audio/mp3" id="az"/>
+               <source src="Centuries.mp3" type="audio/mp3" id="cen"/>
+                 <source src="Orasaadha.mp3" type="audio/mp3" id="or"/>
+                   <source src="Runaway.mp3" type="audio/mp3" id="ru"/>
+             </audio>
+           <div id="pl">
+             <p id="p1"></p>
+             <button id="prev" onclick="prev()"><i class="material-icons">skip_previous</i></button>
+             <button id="pau" onclick="pau()"><i class="material-icons">pause</i></button>
+             <button id="pla" onclick="pla()"><i class="material-icons">play_arrow</i></button>
+             <button id="next" onclick="nex()"><i class="material-icons">skip_next</i></button>
+           </div>
+          </div>
+        </div>
+        <!-- icons for music,message and timer -->
+       <div class="icons">
+         <a href="music.html" id="at" class="current"><i class="material-icons" id="mc">audiotrack</i></a>
+         <a href="messages.html"id="msg" ><i class="material-icons" id="mg">sms</i></a>
+         <a href="tim.html"id="tr" ><i class="material-icons" id="te">schedule</i></a>
+       </div>
+
+    <script src="watch.js" ></script>
+    </body>
+    </html>

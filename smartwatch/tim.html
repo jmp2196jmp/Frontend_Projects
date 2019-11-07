@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <title>watch</title>
+  </head>
+  <body> <!--to give time on screen-->
+           <div id="image">
+          <img  src="siverwatch1.jpg" alt="smart watch" id="watch"><!--watch image-->
+          <div class="time">
+            <p id="te"></p>
+          </div>
+        </div>
+        <!-- content of timer page -->
+        <div id="content">
+         <div id="container">
+            <h3>Time</h3>
+           <div class="but">
+              <h2 id="st"><time>00:00:00</time></h2>
+              <button type="button" name="start" id="start" onclick="timer()">Start</button>
+              <button type="button" name="reset" id="reset" onclick="reset()">Reset</button>
+              <button type="button" name="stop" id="stop" onclick="stop()">Stop</button>
+            </div>
+          </div>
+        </div>
+         <!-- icons for music,message and timer -->
+        <div class="icons">
+          <a href="music.html" id="at" class="current"><i class="material-icons" id="mc">audiotrack</i></a>
+          <a href="messages.html"id="msg" ><i class="material-icons" id="mg">sms</i></a>
+          <a href="tim.html"id="tr" ><i class="material-icons" id="te">schedule</i></a>
+        </div>
+
+    <script src="watch.js" ></script>
+    </body>
+    </html>
