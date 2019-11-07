@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>without api</title>
+    <style>
+      @import url(http://fonts.googleapis.com/css?family=Open+Sans);
+      body{
+        font-family: 'Open Sans', arial, sans-serif;
+      }
+      button{
+        position:absolute;
+        left:120px;
+        top:170px;
+        background-color:green;
+        width:100px;
+        height:30px;
+        border:none;
+        outline:none;
+      }
+      p{
+        position:absolute;
+        left:120px;
+        top:200px;
+      }
+      h2{
+        position:absolute;
+        left:120px;
+        top:110px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Click the button to get the location</h2>
+    <button onclick="Location()">press it</button>
+    <p id="loc"></p>
+    <!-- <iframe  id="fm" src="" width="300px" height="200px"></iframe> -->
+    <script>
+    var l = document.getElementById("loc");
+   // var x = document.getElementById("fm").contentWindow.document.getElementById("loc");
+    function Location() {
+      if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showPosition);
+      } else {
+        l.innerHTML = "This is not supported by this browser.";
+      }
+    }
+
+    function showPosition(position) {
+      l.innerHTML = "Latitude: " + position.coords.latitude +
+      "<br>Longitude: " + position.coords.longitude;
+    }
+    </script>
+
+  </body>
+</html>
